@@ -1654,6 +1654,9 @@ if [ -z ${CCACHE_EXEC} ]; then
     fi
 fi
 
+export _JAVA_OPTIONS=-Xmx4096m
+echo -e "\e[1mjava flag \e[32m\e[4m_JAVA_OPTIONS\e[0m \e[1mhas been set to : \e[4m-Xmx4096m\e[0m"
+
 export ANDROID_BUILD_TOP=$(gettop)
 
 . $ANDROID_BUILD_TOP/vendor/lineage/build/envsetup.sh
